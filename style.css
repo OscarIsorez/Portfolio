@@ -240,8 +240,21 @@ img.portfolio{
     -webkit-border-radius:10px 0; */
     border-radius:15px 15px;
     width: 100%;
-} 
+}
 
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+
+
+.big{
+    height: 26.5em;
+    width:52em
+}
 /* responsive design mobile */
 @media only screen and (max-width:768px){
     img.cover_profile{
