@@ -131,7 +131,7 @@ div.section-grise1 p{
     
 }
 
-.section.grid {
+.grid {
     display: grid;
     justify-content: center;
     overflow: unset;
@@ -384,13 +384,13 @@ img.portfolio{
 
 
     .items > .item > .pizza {
-        width: 61vh;
-        height: 16em;
+        width: 45vh;
+        height: 12em;
 
     }
     .items > .item > .snake {
-        width: 61vh;
-        height: 16em;
+        width: 45vh;
+        height: 12em;
 
     }
 }
