@@ -285,7 +285,7 @@ img.portfolio{
     border-radius: 20px;
 }
 .items > .item > .snake{
-    background: url(expl_EGG_IMG1.png), center;
+    background: url(image_snake1.png), center;
     background-size: cover;
     width: 85vh;
     height: 23em;
