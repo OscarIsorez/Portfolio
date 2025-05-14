@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - URL Blocker by Time</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; }
+        h1, h2 { color: #333; }
+        p { margin-bottom: 1em; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy for URL Blocker by Time</h1>
+    <p><strong>Last Updated: May 14, 2025</strong></p>
+
+    <h2>1. Introduction</h2>
+    <p>Welcome to URL Blocker by Time (the "Extension"). This privacy policy explains how we handle information when you use our Chrome Extension. Our core principle is to respect your privacy and collect only the minimum information necessary for the Extension to function.</p>
+    <p>This Extension is designed to operate locally on your browser. We do not have a server, and we do not track your browsing activity beyond what is necessary for the Extension's core functionality as described below.</p>
+
+    <h2>2. Information We Collect</h2>
+    <p>The URL Blocker by Time Extension collects and stores the following information, which you provide directly:</p>
+    <ul>
+        <li><strong>Blocking Rules:</strong> This includes the URLs of the websites you wish to block, the start times, and the end times for these blocks. Each rule is also assigned a unique ID generated locally.</li>
+    </ul>
+    <p>This information is necessary for the Extension to perform its intended function of blocking specified websites during the timeframes you set.</p>
+    <p><strong>We do NOT collect:</strong></p>
+    <ul>
+        <li>Your browsing history (other than the URLs you explicitly add for blocking).</li>
+        <li>Any personal identification information (PII) such as your name, email address, IP address, or location.</li>
+        <li>Any data from the websites you visit or attempt to visit, beyond the URL itself for matching against your blocking rules.</li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+    <p>The information you provide (your blocking rules) is used exclusively for the following purposes:</p>
+    <ul>
+        <li><strong>To Block Websites:</strong> The URLs and time ranges are used by the <code>chrome.declarativeNetRequest</code> API to create rules that block access to the specified websites during the configured times.</li>
+        <li><strong>To Periodically Update Rules:</strong> The <code>chrome.alarms</code> API is used to check the current time periodically (every minute) and activate or deactivate blocking rules as per your schedule.</li>
+        <li><strong>To Display Your Rules:</strong> The stored rules are displayed back to you in the Extension's popup interface so you can manage them.</li>
+    </ul>
+
+    <h2>4. Data Storage and Security</h2>
+    <p>Your blocking rules (URLs, start times, end times, and IDs) are stored locally on your computer using the <code>chrome.storage.sync</code> API. This means:</p>
+    <ul>
+        <li>The data is stored within your Chrome browser's secure storage.</li>
+        <li>If you are signed into Chrome and have sync enabled, these rules may be synced across your devices where you are signed into the same Chrome profile. This syncing is handled by Google Chrome and subject to Google's privacy policy.</li>
+    </ul>
+    <p>We do not transmit your rules to any external servers or third parties (other than the Chrome sync mechanism if you have it enabled).</p>
+
+    <h2>5. Data Sharing</h2>
+    <p>We do not share any of your data with third parties. All data entered into the Extension remains within your browser or your Chrome sync storage (if enabled by you).</p>
+
+    <h2>6. Your Rights and Control</h2>
+    <p>You have full control over the data stored by this Extension:</p>
+    <ul>
+        <li><strong>View:</strong> You can view all your configured blocking rules within the Extension's popup.</li>
+        <li><strong>Add:</strong> You can add new blocking rules at any time.</li>
+        <li><strong>Delete:</strong> While the current version of the popup ([`popup.js`](popup.js)) does not have a direct delete button for individual rules, removing all rules can be done by clearing storage (e.g., via developer tools or by uninstalling and reinstalling the extension). Future versions may include more granular control. <em>(Note: You might want to update your popup.js to include a delete function for individual rules and then update this section).</em></li>
+        <li><strong>Uninstall:</strong> Uninstalling the Extension will remove all its stored data from your browser.</li>
+    </ul>
+
+    <h2>7. Permissions Used by the Extension</h2>
+    <p>The Extension requests the following permissions, with justifications:</p>
+    <ul>
+        <li><strong><code>storage</code>:</strong> To save and retrieve your blocking rules (URLs and timeframes) locally using <code>chrome.storage.sync</code>.</li>
+        <li><strong><code>declarativeNetRequest</code>:</strong> To block network requests to the URLs you specify, without needing to read the content of web pages or intercept your browsing data directly. This is a privacy-preserving way to block websites.</li>
+        <li><strong><code>alarms</code>:</strong> To periodically check the current time and update the active blocking rules based on your configured schedules, even when the Extension's popup is not open.</li>
+        <li><strong><code>host_permissions: ["&lt;all_urls&gt;"]</code>:</strong> This permission is required by the <code>declarativeNetRequest</code> API to allow the Extension to apply blocking rules to *any* URL that *you* specify. The Extension does not automatically access or read data from all URLs; it only uses this permission to enable blocking for the sites you choose.</li>
+    </ul>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page and updating the "Last Updated" date. You are advised to review this privacy policy periodically for any changes.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at: [Your Email Address or a link to a contact form/GitHub issues page]</p>
+
+</body>
+</html>
