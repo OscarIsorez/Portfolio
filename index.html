@@ -5,90 +5,559 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar Isorez</title>
+    <title>Oscar Isorez | Développeur Flutter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-
-
-
 <body>
-
-
-    <!-- couverture -->
-    <div class="cover">
-        <img class="cover_profile " src="Photo_profil.png" alt="">
-        <h1>Oscar Isorez</h1>
-        <p>Etudiant | programmation </p>
-        <div style="text-align:center">
-            <a class="contact-button" href="mailto:oscar.isorez@gmail.com?subject=Contact%20depuis%20mon%20site"
-                target=_blank>ME CONTACTER</a>
-
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Oscar Isorez</a>
+            <button class="nav-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-        <div class="cover-contact">
-            <p><a href="mailto:oscar.isorez@gmail.com?subject=Contact%20depuis%20mon%20site">oscar.isorez@gmail.com</a>
-            </p>
-            <p><a href="tel:+33783537828">0783537828</a></p>
-        </div>
-    </div>
+    </nav>
 
-
-    <!-- section grise numéro une -->
-    <div style="padding-top: 40px;" class=" section section-grise1">
-        <div class="separateur"></div>
-        <p>Je suis étudiant en informatique, <br> passionné en développement<br> </p>
-    </div>
-
-
-    <!-- section blanche -->
-    <div class="section">
-        <h2>En savoir plus</h2>
-        <img src="presentation-gif.gif" class="col-contenu" />
-        <div class="col-contenu float-right">
-            <div class="texte-avec-ligne-verticale">
-                <p>J'ai 19 ans,<br>
-                    je pratique la programmation <b>quotidiennement</b> durant ma licence d'informatique,<br> mais aussi
-                    en autodidacte via différents projets.<br>
-                    J'ai acquis des <b>compétences</b> solides en informatique, notamment sur le language <b>Python
-                    </b><br>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">Développeur Mobile</span>
+                <h1 class="hero-title">Oscar Isorez</h1>
+                <p class="hero-subtitle">Développeur d'applications mobiles <span class="highlight">Flutter</span></p>
+                <p class="hero-description">
+                    Je conçois et développe des applications Android et iOS modernes, performantes et centrées sur
+                    l'utilisateur.
                 </p>
-                <p>
-                    J'ai utilisé ce language pour faire plusieurs projets divers et variés :
-                    des applications avec <b>Django</b>, des jeux avec <b>Pygame</b> et bien d'autres.
-                    J'ai pu faire par exemple une <b>backdoor</b> ou du <b>scraping</b> sur le web. Je n'ai qu'une
-                    envie,
-                    c'est d'apprendre pour m'améliorer et consolider mes <b>connaissances</b> et mes <b>capacités</b> en
-                    développement !
-                </p>
-                <a class="lien" href="https://github.com/OscarIsorez" target="_blank">Mon profil Github</a>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/OscarIsorez" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/oscar-isorez" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:oscar.isorez@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- PLACEHOLDER: Remplacer par ta photo professionnelle -->
+                <img src="Photo_profil.png" alt="Oscar Isorez" class="profile-img">
+                <div class="hero-image-decoration"></div>
             </div>
         </div>
-    </div>
-
-
-    <!-- section grise numéro 2 -->
-    <div class=" section section-grise2">
-        <h2 style="padding-bottom: 40px;">Portfolio</h2>
-        <div class="items">
-            <a href="Projets-Pygame.html" class="item">
-                <div class="barre-verticale"></div>
-                <div class="snake"></div>
-                <h3>Snake Versus, jeu crée en Terminale </h3>
-            </a>
-            <a href="portfolio-formation.html" class="item">
-                <div class="barre-verticale"></div>
-                <div class="pizza"></div>
-                <h3>Mes projets réalisés durant ma formation</h3>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <span>Découvrir</span>
+                <i class="fas fa-chevron-down"></i>
             </a>
         </div>
-    </div>
+    </section>
 
-    <!-- section blanche -->
-    <div class="section">
-        <iframe src="contact-frame.html" scrolling="no"></iframe>
-    </div>
+    <!-- À propos -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">À propos</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- PLACEHOLDER: Image ou GIF de toi en train de coder -->
+                    <img src="placeholder-about.jpg" alt="Oscar au travail">
+                </div>
+                <div class="about-text">
+                    <h3>Passionné par le développement mobile</h3>
+                    <p>
+                        Je suis un développeur mobile spécialisé dans <strong>Flutter</strong>, passionné par la
+                        création d'applications modernes, rapides et utiles.
+                    </p>
+                    <p>
+                        Je conçois et développe des applications <strong>Android et iOS</strong>, avec une attention
+                        particulière pour l'architecture (BLoC, MVC), la performance, l'UX minimaliste et l'intégration
+                        de services cloud (Firebase, Firestore).
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Projets Flutter</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Cross-platform</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Compétences -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            <div class="skills-grid">
+                <!-- Développement Mobile -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Développement Mobile</h3>
+                    <ul class="skill-list">
+                        <li>Flutter (widgets, state management, animations)</li>
+                        <li>Architecture BLoC</li>
+                        <li>Intégration Firebase (Auth, Firestore, Storage)</li>
+                        <li>Gestion offline / synchronisation</li>
+                        <li>Optimisation UI/UX & responsive design</li>
+                    </ul>
+                </div>
 
+                <!-- Backend & Intégration -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend & Intégration</h3>
+                    <ul class="skill-list">
+                        <li>APIs REST</li>
+                        <li>Sécurité : chiffrement, gestion des permissions</li>
+                        <li>Consommation d'APIs complexes (ADE, services externes)</li>
+                        <li>Firebase Cloud Functions</li>
+                        <li>Base de données NoSQL</li>
+                    </ul>
+                </div>
+
+                <!-- Outils & Workflow -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Outils & Workflow</h3>
+                    <ul class="skill-list">
+                        <li>VSCode, Android Studio</li>
+                        <li>Déploiement Android (debug via USB)</li>
+                        <li>Git / GitHub</li>
+                        <li>Figma pour les maquettes</li>
+                        <li>CI/CD & Tests automatisés</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Technologies -->
+            <div class="tech-stack">
+                <h3>Technologies maîtrisées</h3>
+                <div class="tech-icons">
+                    <div class="tech-item" data-tooltip="Flutter">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                            alt="Flutter">
+                    </div>
+                    <div class="tech-item" data-tooltip="Dart">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
+                    </div>
+                    <div class="tech-item" data-tooltip="Firebase">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                            alt="Firebase">
+                    </div>
+                    <div class="tech-item" data-tooltip="Python">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="Python">
+                    </div>
+                    <div class="tech-item" data-tooltip="Git">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    </div>
+                    <div class="tech-item" data-tooltip="Android">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
+                            alt="Android">
+                    </div>
+                    <div class="tech-item" data-tooltip="Figma">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                            alt="Figma">
+                    </div>
+                    <div class="tech-item" data-tooltip="VS Code">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                            alt="VS Code">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <p class="section-subtitle">Applications Flutter développées avec passion</p>
+
+            <div class="projects-grid">
+                <!-- Projet 1: Analyse vidéo Tennis de Table -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <!-- PLACEHOLDER: Screenshot ou vidéo de l'app -->
+                        <img src="placeholder-project-tennis.jpg" alt="App Analyse Tennis de Table">
+                        <div class="project-overlay">
+                            <span class="project-tag">Flutter + TensorFlow</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analyse Vidéo Tennis de Table</h3>
+                        <p>Application permettant d'importer ou filmer des entraînements, analyser automatiquement la
+                            posture et les mouvements, et recevoir des recommandations personnalisées.</p>
+                        <ul class="project-tech">
+                            <li>Flutter</li>
+                            <li>TensorFlow Lite</li>
+                            <li>Firebase</li>
+                            <li>ML</li>
+                        </ul>
+                        <div class="project-links">
+                            <!-- PLACEHOLDER: Liens vers GitHub ou démo -->
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 2: Chat Chiffré -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- PLACEHOLDER: Screenshot de l'app de chat -->
+                        <img src="placeholder-project-chat.jpg" alt="App Chat Chiffré">
+                        <div class="project-overlay">
+                            <span class="project-tag">BLoC + Firebase</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Chat Chiffré Sécurisé</h3>
+                        <p>Application complète de messagerie avec chat 1-1, architecture BLoC bien structurée, messages
+                            chiffrés AES/RSA avant envoi.</p>
+                        <ul class="project-tech">
+                            <li>Flutter</li>
+                            <li>Firebase Auth</li>
+                            <li>Firestore</li>
+                            <li>Chiffrement AES/RSA</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 3: Salles Libres ADE -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- PLACEHOLDER: Screenshot de l'app salles libres -->
+                        <img src="placeholder-project-salles.jpg" alt="App Salles Libres">
+                        <div class="project-overlay">
+                            <span class="project-tag">API REST</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Salles Libres (ADE API)</h3>
+                        <p>Consommation de l'API de planning ADE pour afficher les disponibilités des salles avec une
+                            interface minimaliste et une recherche rapide.</p>
+                        <ul class="project-tech">
+                            <li>Flutter</li>
+                            <li>REST API</li>
+                            <li>Clean Architecture</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 4: Blocage d'Applications -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- PLACEHOLDER: Screenshot de l'app de blocage -->
+                        <img src="placeholder-project-blocker.jpg" alt="App Blocage">
+                        <div class="project-overlay">
+                            <span class="project-tag">Android Services</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>App Blocker</h3>
+                        <p>Verrouillage sélectif des applications sensibles avec autorisation temporaire et statistiques
+                            journalières d'utilisation.</p>
+                        <ul class="project-tech">
+                            <li>Flutter</li>
+                            <li>Android Services</li>
+                            <li>DevicePolicyManager</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 5: Tuiles de Films -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- PLACEHOLDER: Screenshot de l'app films -->
+                        <img src="placeholder-project-films.jpg" alt="App Films">
+                        <div class="project-overlay">
+                            <span class="project-tag">Firestore + Animations</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Catalogue Films</h3>
+                        <p>Affichage en grille de films cliquables avec contenu stocké dans Firestore et transitions
+                            fluides entre les pages.</p>
+                        <ul class="project-tech">
+                            <li>Flutter</li>
+                            <li>Firestore</li>
+                            <li>Animations</li>
+                            <li>Hero Transitions</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 6: Synthèse de Cours -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- PLACEHOLDER: Screenshot de l'app cours -->
+                        <img src="placeholder-project-cours.jpg" alt="App Synthèse Cours">
+                        <div class="project-overlay">
+                            <span class="project-tag">PDF/PPT Parser</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Lecteur & Synthèse de Cours</h3>
+                        <p>Import de fichiers PDF/PowerPoint avec extraction automatique du contenu et génération d'une
+                            vue minimaliste interactive.</p>
+                        <ul class="project-tech">
+                            <li>Flutter</li>
+                            <li>PDF Parsing</li>
+                            <li>PPT Parsing</li>
+                            <li>UI/UX</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 7: Cartes Mentales -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- PLACEHOLDER: Screenshot de l'app cartes mentales -->
+                        <img src="placeholder-project-mindmap.jpg" alt="App Cartes Mentales">
+                        <div class="project-overlay">
+                            <span class="project-tag">Graph Rendering</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Générateur de Cartes Mentales</h3>
+                        <p>Extraction intelligente des points clés de fichiers de cours et création automatique de
+                            cartes mentales éditables.</p>
+                        <ul class="project-tech">
+                            <li>Flutter</li>
+                            <li>Graph Rendering</li>
+                            <li>NLP</li>
+                            <li>Canvas</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 8: Outils Santé -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- PLACEHOLDER: Screenshot de l'app santé -->
+                        <img src="placeholder-project-health.jpg" alt="Outils Santé">
+                        <div class="project-overlay">
+                            <span class="project-tag">Samsung Health API</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Outils Mobiles Santé</h3>
+                        <p>Applications expérimentales pour la santé : récupération des données Samsung Health et
+                            génération de rapports personnalisés.</p>
+                        <ul class="project-tech">
+                            <li>Flutter</li>
+                            <li>Samsung Health</li>
+                            <li>Wearables</li>
+                            <li>Data Analysis</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophie -->
+    <section class="section philosophy">
+        <div class="container">
+            <h2 class="section-title">Ma Philosophie</h2>
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <i class="fas fa-palette"></i>
+                    <h4>Design Minimaliste</h4>
+                    <p>Interfaces épurées et lisibles, centrées sur l'essentiel</p>
+                </div>
+                <div class="philosophy-item">
+                    <i class="fas fa-bolt"></i>
+                    <h4>Performance</h4>
+                    <p>Applications fluides même sur des appareils modestes</p>
+                </div>
+                <div class="philosophy-item">
+                    <i class="fas fa-cubes"></i>
+                    <h4>Architecture Propre</h4>
+                    <p>Code modulaire, scalable et bien documenté</p>
+                </div>
+                <div class="philosophy-item">
+                    <i class="fas fa-user-check"></i>
+                    <h4>Centré Utilisateur</h4>
+                    <p>Priorité à la valeur apportée à l'utilisateur final</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">Disponible pour freelance, collaboration ou développement d'applications
+                complètes</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:oscar.isorez@gmail.com">oscar.isorez@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <a href="tel:+33783537828">07 83 53 78 28</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/OscarIsorez" target="_blank">github.com/OscarIsorez</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/oscar-isorez"
+                                target="_blank">linkedin.com/in/oscar-isorez</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta">
+                    <h3>Parlons de votre projet</h3>
+                    <p>Vous avez une idée d'application mobile ? Je serais ravi d'en discuter avec vous.</p>
+                    <a href="mailto:oscar.isorez@gmail.com?subject=Projet%20Application%20Mobile"
+                        class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> Envoyer un message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Oscar Isorez. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/OscarIsorez" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/oscar-isorez" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:oscar.isorez@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script pour les animations et interactions -->
+    <script>
+        // Navigation toggle mobile
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.querySelector('i').classList.toggle('fa-bars');
+            navToggle.querySelector('i').classList.toggle('fa-times');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card, .skill-card, .philosophy-item, .about-content, .contact-content').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 
 </html>
