@@ -60,7 +60,7 @@
             </div>
             <div class="hero-image">
                 <!-- PLACEHOLDER: Remplacer par ta photo professionnelle -->
-                <img src="Photo_profil.png" alt="Oscar Isorez" class="profile-img">
+                <img src="Photo_profil.jpg" alt="Oscar Isorez" class="profile-img">
                 <div class="hero-image-decoration"></div>
             </div>
         </div>
@@ -79,7 +79,8 @@
             <div class="about-content">
                 <div class="about-image">
                     <!-- PLACEHOLDER: Image ou GIF de toi en train de coder -->
-                    <img src="placeholder-about.jpg" alt="Oscar au travail">
+                     <!-- TODO -->
+                    <img src="new-icon-profile.gif" alt="Oscar au travail">
                 </div>
                 <div class="about-text">
                     <h3>Passionné par le développement mobile</h3>
@@ -89,13 +90,13 @@
                     </p>
                     <p>
                         Je conçois et développe des applications <strong>Android et iOS</strong>, avec une attention
-                        particulière pour l'architecture (BLoC, MVC), la performance, l'UX minimaliste et l'intégration
-                        de services cloud (Firebase, Firestore).
+                        particulière pour l'architecture (BLoC, MVC), la performance, l'UX  et l'intégration
+                        de services cloud (Firebase, Firestore). Je produits aussi des logiciels multiplateformes.
                     </p>
                     <div class="about-stats">
                         <div class="stat">
-                            <span class="stat-number">8+</span>
-                            <span class="stat-label">Projets Flutter</span>
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">Projets réalisés</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">2+</span>
@@ -153,8 +154,8 @@
                     </div>
                     <h3>Outils & Workflow</h3>
                     <ul class="skill-list">
-                        <li>VSCode, Android Studio</li>
-                        <li>Déploiement Android (debug via USB)</li>
+                        <li>VSCode</li>
+                        <li>Déploiement Android</li>
                         <li>Git / GitHub</li>
                         <li>Figma pour les maquettes</li>
                         <li>CI/CD & Tests automatisés</li>
@@ -204,28 +205,29 @@
     <!-- Projets -->
     <section class="section projects" id="projects">
         <div class="container">
-            <h2 class="section-title">Mes Projets</h2>
-            <p class="section-subtitle">Applications Flutter développées avec passion</p>
+            <h2 class="section-title">Quelques Projets</h2>
+            <p class="section-subtitle">Applications mobiles, projets Python et extensions web développés avec passion
+            </p>
 
             <div class="projects-grid">
                 <!-- Projet 1: Analyse vidéo Tennis de Table -->
-                <article class="project-card featured">
+                <article class="project-card ">
                     <div class="project-image">
-                        <!-- PLACEHOLDER: Screenshot ou vidéo de l'app -->
-                        <img src="placeholder-project-tennis.jpg" alt="App Analyse Tennis de Table">
+                        <!-- PLACEHOLDER: Screenshot ou vidéo de l'app SecondBrain -->
+                        <img src="SecondBrain.jpg" alt="App SecondBrain">
                         <div class="project-overlay">
-                            <span class="project-tag">Flutter + TensorFlow</span>
+                            <span class="project-tag">Flutter + IA</span>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Analyse Vidéo Tennis de Table</h3>
-                        <p>Application permettant d'importer ou filmer des entraînements, analyser automatiquement la
-                            posture et les mouvements, et recevoir des recommandations personnalisées.</p>
+                        <h3>SecondBrain</h3>
+                        <p>Application permettant de scanner des pages de livres, extraire et sauvegarder automatiquement les citations importantes avec recherche textuelle avancée alimentée par le modèle Gemma de Google. Toutes les données sont stockées localement pour une confidentialité totale.</p>
                         <ul class="project-tech">
                             <li>Flutter</li>
-                            <li>TensorFlow Lite</li>
-                            <li>Firebase</li>
-                            <li>ML</li>
+                            <li>OCR (Text Recognition)</li>
+                            <li>Google Gemma AI</li>
+                            <li>Stockage Local</li>
+                            <li>Recherche IA Avancée</li>
                         </ul>
                         <div class="project-links">
                             <!-- PLACEHOLDER: Liens vers GitHub ou démo -->
@@ -235,24 +237,23 @@
                     </div>
                 </article>
 
-                <!-- Projet 2: Chat Chiffré -->
+                
+                <!-- Projet 10: Property Management App -->
                 <article class="project-card">
                     <div class="project-image">
-                        <!-- PLACEHOLDER: Screenshot de l'app de chat -->
-                        <img src="placeholder-project-chat.jpg" alt="App Chat Chiffré">
+                        <!-- PLACEHOLDER: Screenshot de l'app gestion immobilière -->
+                        <img src="property_app.jpg" alt="Property Management App">
                         <div class="project-overlay">
-                            <span class="project-tag">BLoC + Firebase</span>
+                            <span class="project-tag">Flutter Multi-plateforme</span>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Chat Chiffré Sécurisé</h3>
-                        <p>Application complète de messagerie avec chat 1-1, architecture BLoC bien structurée, messages
-                            chiffrés AES/RSA avant envoi.</p>
+                        <h3>Property Management</h3>
+                        <p>Application cross-platform de gestion immobilière multiplateforme pour un professionel. Comptes locataire et manager </p>
                         <ul class="project-tech">
-                            <li>Flutter</li>
-                            <li>Firebase Auth</li>
-                            <li>Firestore</li>
-                            <li>Chiffrement AES/RSA</li>
+                            <li>Cross-platform</li>
+                            <li>Firebase Auth & Firestore</li>
+                            <li>UI/UX Design</li>
                         </ul>
                         <div class="project-links">
                             <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
@@ -260,23 +261,24 @@
                     </div>
                 </article>
 
-                <!-- Projet 3: Salles Libres ADE -->
+                <!-- Projet 11: Pointeur App -->
                 <article class="project-card">
                     <div class="project-image">
-                        <!-- PLACEHOLDER: Screenshot de l'app salles libres -->
-                        <img src="placeholder-project-salles.jpg" alt="App Salles Libres">
+                        <!-- PLACEHOLDER: Screenshot de l'app Pointeur -->
+                        <img src="point.jpg" alt="Pointeur App">
                         <div class="project-overlay">
-                            <span class="project-tag">API REST</span>
+                            <span class="project-tag">Flutter + UX</span>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Salles Libres (ADE API)</h3>
-                        <p>Consommation de l'API de planning ADE pour afficher les disponibilités des salles avec une
-                            interface minimaliste et une recherche rapide.</p>
+                        <h3>Time Tracking</h3>
+                        <p>Application Flutter personnelle de suivi du temps de travail, créée pour résoudre un besoin
+                            réel d'un membre de ma famille. Focus sur l'expérience utilisateur et la simplicité.</p>
                         <ul class="project-tech">
                             <li>Flutter</li>
-                            <li>REST API</li>
-                            <li>Clean Architecture</li>
+                            <li>UX Design</li>
+                            <li>Time Management</li>
+                            <li>Local Storage</li>
                         </ul>
                         <div class="project-links">
                             <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
@@ -284,23 +286,25 @@
                     </div>
                 </article>
 
-                <!-- Projet 4: Blocage d'Applications -->
+                <!-- Projet 12: Timer Extension -->
                 <article class="project-card">
                     <div class="project-image">
-                        <!-- PLACEHOLDER: Screenshot de l'app de blocage -->
-                        <img src="placeholder-project-blocker.jpg" alt="App Blocage">
+                        <!-- PLACEHOLDER: Screenshot de l'extension Timer -->
+                        <img src="time_ext.png" alt="Timer Extension">
                         <div class="project-overlay">
-                            <span class="project-tag">Android Services</span>
+                            <span class="project-tag">Chrome Extension</span>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>App Blocker</h3>
-                        <p>Verrouillage sélectif des applications sensibles avec autorisation temporaire et statistiques
-                            journalières d'utilisation.</p>
+                        <h3>Timer Extension</h3>
+                        <p>Extension Chrome de productivité permettant de gérer le temps passé sur les sites web avec
+                            des timers et redirections automatiques. Lutte contre la procrastination sur les réseaux
+                            sociaux.</p>
                         <ul class="project-tech">
-                            <li>Flutter</li>
-                            <li>Android Services</li>
-                            <li>DevicePolicyManager</li>
+                            <li>JavaScript</li>
+                            <li>Chrome API</li>
+                            <li>CSS/HTML</li>
+                            <li>Browser Extension</li>
                         </ul>
                         <div class="project-links">
                             <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
@@ -308,99 +312,23 @@
                     </div>
                 </article>
 
-                <!-- Projet 5: Tuiles de Films -->
-                <article class="project-card">
+                <!-- Projet 9: Filament - Python Project -->
+                <article class="project-card ">
                     <div class="project-image">
-                        <!-- PLACEHOLDER: Screenshot de l'app films -->
-                        <img src="placeholder-project-films.jpg" alt="App Films">
+                        <!-- PLACEHOLDER: Screenshot du projet Filament -->
+                        <img src="Filament.png" alt="Filament Python Project">
                         <div class="project-overlay">
-                            <span class="project-tag">Firestore + Animations</span>
+                            <span class="project-tag">Python</span>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Catalogue Films</h3>
-                        <p>Affichage en grille de films cliquables avec contenu stocké dans Firestore et transitions
-                            fluides entre les pages.</p>
+                        <h3>Filament</h3>
+                        <p>Application Python complète développée sur plusieurs mois avec un développement actif. Projet
+                            d'envergure.</p>
                         <ul class="project-tech">
-                            <li>Flutter</li>
-                            <li>Firestore</li>
-                            <li>Animations</li>
-                            <li>Hero Transitions</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Projet 6: Synthèse de Cours -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <!-- PLACEHOLDER: Screenshot de l'app cours -->
-                        <img src="placeholder-project-cours.jpg" alt="App Synthèse Cours">
-                        <div class="project-overlay">
-                            <span class="project-tag">PDF/PPT Parser</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Lecteur & Synthèse de Cours</h3>
-                        <p>Import de fichiers PDF/PowerPoint avec extraction automatique du contenu et génération d'une
-                            vue minimaliste interactive.</p>
-                        <ul class="project-tech">
-                            <li>Flutter</li>
-                            <li>PDF Parsing</li>
-                            <li>PPT Parsing</li>
-                            <li>UI/UX</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Projet 7: Cartes Mentales -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <!-- PLACEHOLDER: Screenshot de l'app cartes mentales -->
-                        <img src="placeholder-project-mindmap.jpg" alt="App Cartes Mentales">
-                        <div class="project-overlay">
-                            <span class="project-tag">Graph Rendering</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Générateur de Cartes Mentales</h3>
-                        <p>Extraction intelligente des points clés de fichiers de cours et création automatique de
-                            cartes mentales éditables.</p>
-                        <ul class="project-tech">
-                            <li>Flutter</li>
-                            <li>Graph Rendering</li>
-                            <li>NLP</li>
-                            <li>Canvas</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Projet 8: Outils Santé -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <!-- PLACEHOLDER: Screenshot de l'app santé -->
-                        <img src="placeholder-project-health.jpg" alt="Outils Santé">
-                        <div class="project-overlay">
-                            <span class="project-tag">Samsung Health API</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Outils Mobiles Santé</h3>
-                        <p>Applications expérimentales pour la santé : récupération des données Samsung Health et
-                            génération de rapports personnalisés.</p>
-                        <ul class="project-tech">
-                            <li>Flutter</li>
-                            <li>Samsung Health</li>
-                            <li>Wearables</li>
-                            <li>Data Analysis</li>
+                            <li>Python</li>
+                            <li>Architecture modulaire</li>
+                            <li>Gestion de projet</li>
                         </ul>
                         <div class="project-links">
                             <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
